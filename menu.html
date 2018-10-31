@@ -1,0 +1,161 @@
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> TOY RESTAURANT </title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/default.css" />
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/ui.js"></script>
+</head>
+<body>
+
+	<!-- s: header -->
+	<header id="header_container">
+		<div class="header_inner">
+			<h1 class="logo"><a href="index.html">TOY RESTAURANT</a></h1>
+			<nav class="gnb_wrap">
+				<ul>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="menu.html">MENU</a></li>
+					<li><a href="store.html">STORE</a></li>
+					<!-- <li><a href="#none" onclick="toy.notFound();">STORE</a></li> -->
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- e: header -->
+
+	<!-- s: body -->
+	<div id="body_container" class="menu_page">
+		<div class="body_inner">
+
+			<!-- s: content -->
+			<section class="content_wrap">
+				<link rel="stylesheet" href="css/swiper.min.css" />
+				<script src="js/swiper.min.js"></script>
+				<!-- s: slider -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<!-- s: item -->
+						<div class="swiper-slide">
+							<div class="movie">
+								<video muted loop autoplay>
+									<source src="movie/bacon.mp4" type="video/mp4">
+									video 태그가 지원되지 않는 브라우저 입니다.
+								</video>
+							</div>
+							<img src="images/menu/img_content01.png" width="410" height="360" />
+						</div>
+						<!-- e: item -->
+						<!-- s: item -->
+						<div class="swiper-slide">
+							<div class="movie">
+								<video muted loop autoplay>
+									<source src="movie/hotdog.mp4" type="video/mp4">
+									video 태그가 지원되지 않는 브라우저 입니다.
+								</video>
+							</div>
+							<img src="images/menu/img_content02.png" width="410" height="360" />
+						</div>
+						<!-- e: item -->
+						<!-- s: item -->
+						<div class="swiper-slide">
+							<div class="movie">
+								<video muted loop autoplay>
+									<source src="movie/pizza.mp4" type="video/mp4">
+									video 태그가 지원되지 않는 브라우저 입니다.
+								</video>
+							</div>
+							<img src="images/menu/img_content03.png" width="410" height="360" />
+						</div>
+						<!-- e: item -->
+						<!-- s: item -->
+						<div class="swiper-slide">
+							<div class="movie">
+								<video muted loop autoplay>
+									<source src="movie/salad.mp4" type="video/mp4">
+									video 태그가 지원되지 않는 브라우저 입니다.
+								</video>
+							</div>
+							<img src="images/menu/img_content04.png" width="410" height="360" />
+						</div>
+						<!-- e: item -->
+						<!-- s: item -->
+						<div class="swiper-slide">
+							<div class="movie">
+								<video muted loop autoplay>
+									<source src="movie/soup.mp4" type="video/mp4">
+									video 태그가 지원되지 않는 브라우저 입니다.
+								</video>
+							</div>
+							<img src="images/menu/img_content05.png" width="410" height="360" />
+						</div>
+						<!-- e: item -->
+						<!-- s: item -->
+						<div class="swiper-slide">
+							<div class="movie">
+								<video muted loop autoplay>
+									<source src="movie/ade.mp4" type="video/mp4">
+									video 태그가 지원되지 않는 브라우저 입니다.
+								</video>
+							</div>
+							<img src="images/menu/img_content06.png" width="410" height="360" />
+						</div>
+						<!-- e: item -->
+						<!-- s: item -->
+						<div class="swiper-slide">
+							<div class="movie">
+								<video muted loop autoplay>
+									<source src="movie/soda.mp4" type="video/mp4">
+									video 태그가 지원되지 않는 브라우저 입니다.
+								</video>
+							</div>
+							<img src="images/menu/img_content07.png" width="410" height="360" />
+						</div>
+						<!-- e: item -->
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<!-- e: slider -->
+				<script type="text/javascript">
+					$(function(){
+						var eventSwiper = new Swiper ('.content_wrap .swiper-container', {
+							speed: 800,
+							loop: true,
+							pagination: {
+								el: '.content_wrap .swiper-pagination',
+								type: 'bullets',
+							},
+						});
+						$(".content_wrap").on("click", function(){
+							eventSwiper.slideNext(800)
+						});
+					})
+				</script>
+			</section>
+			<!-- e: content -->
+
+		</div>
+	</div>
+	<!-- e: body -->
+
+	<!-- s: footer -->
+	<footer id="footer_container">
+		<div class="footer_inner">
+			<h1 class="logo">TOY RESTAURANT</h1>
+			<p class="cp">
+				완구 장난동 122-2 캔디샵  3블록 구석길 | 대표 Tom&amp;Chacha | 대표전화 5925-1482 | 고객상담메일 <a href="mailto:bthebest0816@naver.com">bthebest0816@naver.com</a><br />
+				COPYRIGHT ⓒ BY TOY RESTAURANT
+			</p>
+			<ul class="sns_wrap">
+				<li><a href="https://www.facebook.com/Toy-Restaurant-206936019941864/?modal=admin_todo_tour" target="_blank" class="fb">facebook</a></li>
+				<li><a href="https://www.instagram.com/toy_restaurant/" target="_blank" class="insta">instagram</a></li>
+			</ul>
+		</div>
+	</footer>
+	<!-- e: footer -->
+
+</body>
+</html>
